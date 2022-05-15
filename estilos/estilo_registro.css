@@ -1,0 +1,76 @@
+*{
+    color: azure;
+    background-color: rgb(107, 0, 0);
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    padding-top: 0.5%;
+     
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    padding-right: 3%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    background-color: rgb(107, 0, 0);
+    font-size: 200%;
+    /* background-color: rgb(255, 250, 250); */
+    font-family: 'Hurricane', 'cursive';
+    margin: 2px;
+}
+nav{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    
+    color:rgb(255, 255, 255);
+}
+form{
+    margin-top: 100px;
+}
+#nombre_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#apellido_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#edad_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#correo_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#direccion_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#altura_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#telefono_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+#fecha_nacimiento_{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+button{
+    margin: 4px;
+    background-color: rgb(0, 0, 0);
+}

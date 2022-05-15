@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/estilos/estilo_registro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/imagenes/favicon/favicon2/favicon-32x32.png">
+    
+    <title>D'elias</title>
+</head>
+    <header>
+        <img src="/imagenes/logo/logo2consombra.png" alt="Imagen logo" width="100" height="100">
+        <h1><a href="index.html">D'elias</a></h1>
+        <img src="/imagenes/logo/logo2consombra.png" alt="Imagen logo" width="100" height="100">
+    </header> 
+    <form name="fvalida">
+        <table>
+            <tr>
+                <td>Nombre: </td>
+                <td><input type="text" id="nombre_" name="nombre" size="40" maxlength="50" minlength="3" placeholder="Introduzca su nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido: </td>
+                <td><input type="text" id="apellido_" name="apellido" size="40" maxlength="50" minlength="3" placeholder="Introduzca su apellido"></td>
+            </tr>
+            <tr>
+                <td>Correo: </td>
+                <td><input type="email" id="correo_" name="correo" size="40" maxlength="50" minlength="3" placeholder="Introduzca su correo"></td>
+            </tr>
+            <tr>
+                <td>Dirección: </td>
+                <td><input type="text" id="direccion_" name="direccion" size="40" maxlength="50" minlength="3" placeholder="Introduzca su direccion"></td>
+            </tr>
+            <tr>
+                <td>Teléfono: </td>
+                <td><input type="text" id="telefono_" name="telefono" size="40" maxlength="50" minlength="3" placeholder="Introduzca su teléfono"></td>
+            </tr>
+            <!-- <tr>
+                <td>Edad: </td>
+                <td><input type="number" id="edad_" name="edad" size="20" maxlength="3" minlength="2" placeholder="Introduzca su edad"></td>
+            </tr> -->
+            <tr>
+                <td>Fecha de nacimiento: </td>
+                <td><input type="date" id="fecha_nacimiento_" name="fecha_nacimiento" size="40" maxlength="10" minlength="3" placeholder="Introduzca su teléfono"></td>
+            </tr>
+        </table>
+              
+        <p>
+            <label for="Enviar">
+                <input type="submit" value="Enviar" onclick="valida_envia()">
+            </label>
+
+            <label for="Borrar">
+                <input type="reset" value="Borrar" >
+            </label>
+        </p>
+
+           <script>
+            function valida_envia() {
+                //valido el nombre
+                if (document.fvalida.nombre.value.length == 0) {
+                    alert("Tiene que escribir su nombre")
+                    document.fvalida.nombre.focus()//foco en el campo del nombre
+                    return 0;
+                }
+                if (document.fvalida.apellido.value.length == 0) {
+                    alert("Tiene que escribir su apellido")
+                    document.fvalida.apellido.focus()//foco en el campo del apellido
+                    return 0;
+                }
+                if (document.fvalida.correo.value.length == 0) {
+                    alert("Tiene que escribir su correo")
+                    document.fvalida.correo.focus()//foco en el campo del apellido
+                    return 0;
+                }
+                if (document.fvalida.direccion.value.length == 0) {
+                    alert("Tiene que escribir su direccion")
+                    document.fvalida.direccion.focus()//foco en el campo del apellido
+                    return 0;
+                }
+                if (document.fvalida.telefono.value.length == 0) {
+                    alert("Tiene que escribir su teléfono")
+                    document.fvalida.telefono.focus()//foco en el campo del apellido
+                    return 0;
+                }
+                if (document.fvalida.fecha_nacimiento.value.length == 0) {
+                    alert("Tiene que escribir su fecha de nacimiento")
+                    document.fvalida.fecha_nacimiento.focus()//foco en el campo del apellido
+                    return 0;
+                }
+                if (document.fvalida.edad.value.length == 0) {
+                    alert("Tiene que escribir su edad")
+                    document.fvalida.edad.focus()//foco en el campo del apellido
+                    return 0;
+                }
+
+
+                edad = document.fvalida.edad.value
+                edad = validarEntero(edad)
+                document.fvalida.edad.value = edad
+                if (edad == "") {
+                    alert("Tiene que introducir un número entero en su edad.")
+                    document.fvalida.edad.focus()
+                    return 0;
+                } else {
+                    if (edad < 18) {
+                        alert("Debe ser mayor de 18 años.")
+                        document.fvalida.edad.focus()
+                        return 0;
+                    }
+                }
+            }
+            </script>
+    </form>
+    <nav>
+        <a href="index.html">Home</a>
+        <br>
+        <a href="menu.html">Menú</a>
+        <br>
+        <a href="nosotros.html">Nosotros</a>
+        <br>
+        <a href="registro.html">Registro</a>
+    </nav>
+    
+    <footer>
+        <p align="center">© 2022 – Todos los derechos reservados - Contacto desarrollador: <a id="correo2" href="mailto:george_manoukian@hotmail.com">george_manoukian@hotmail.com </a></p>
+    </footer>
+
+</body>
+</html>
