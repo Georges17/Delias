@@ -171,3 +171,25 @@ a:hover{
       width:100%;
     }
 }
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 200%;
+    }
+    img{
+        display: flexbox;
+        max-width: 35%;
+        max-height: 50%;
+    }
+    body{
+        text-align: center;
+        font-size: 50%;
+    }
+    p{
+        text-align: center;
+        font-size: 60%;
+    }
+    #correo{
+        text-align: center;
+        font-size: 550px;
+    }
+}
