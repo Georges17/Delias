@@ -132,22 +132,45 @@ a:hover{
     -webkit-transform: rotate(360deg);
     }
 .slidein1 {
-    animation-duration: 3s;
-    animation-name: slidein1;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein1;
+            animation-name: slidein1;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     } 
 .slidein2 {
-    animation-duration: 3s;
-    animation-name: slidein2;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein2;
+            animation-name: slidein2;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
   }
 .slidein3 {
-    animation-duration: 3s;
-    animation-name: slidein3;
-    animation-iteration-count: 3;
-    animation-direction: alternate;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: slidein3;
+            animation-name: slidein3;
+    -webkit-animation-iteration-count: 3;
+            animation-iteration-count: 3;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+@-webkit-keyframes slidein1 {
+      /*arepas*/
+    from {
+      margin-left:0%;
+      width:100%
+    }
+    to {
+      margin-left:100%;
+      width:100%;
+    }
 }
 @keyframes slidein1 {
       /*arepas*/
@@ -157,6 +180,17 @@ a:hover{
     }
     to {
       margin-left:100%;
+      width:100%;
+    }
+}
+@-webkit-keyframes slidein3 {
+      /*tequeños*/
+    from {
+      margin-left:0%;
+      width:100%
+    }
+    to {
+      margin-left:-100%;
       width:100%;
     }
 }
