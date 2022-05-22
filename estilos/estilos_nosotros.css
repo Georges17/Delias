@@ -22,12 +22,13 @@ body{
     margin: 2px;
 }
 nav{
+    font-size: 2.2em;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;  
 }
 a{
-    font-size: 300%;
+    font-size: 100%;
     text-decoration: none;
 }
 #inbound{
